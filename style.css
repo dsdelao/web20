@@ -695,7 +695,7 @@ section p { text-align: justify; margin-bottom: 20px; line-height: 1.75; font-si
    FOOTER
 ================================ */
 footer {
-  background: var(--verde-upm); color: white; text-align: center;
+  background: var(--naranja-upm); color: white; text-align: center;
   padding: 20px; font-family: 'Open Sans', sans-serif; font-size: 1rem;
   display: flex; flex-direction: column; align-items: center;
 }
