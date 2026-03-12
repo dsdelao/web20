@@ -246,9 +246,17 @@ nav {
   width: 100%; height: 100%; object-fit: cover; object-position: center;
 }
 
+/* =================================
+   CAPA OSCURA DEL BANNER
+================================= */
 .overlay-oscuro {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.65); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2; /* asegura que esté encima de las imágenes */
 }
 
 .hero-contenido {
@@ -271,6 +279,77 @@ nav {
   font-size: 1.2rem; margin-bottom: 35px; color: var(--blanco);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
+
+/* =================================
+HERO INTERNO (BANNER DE PÁGINAS)
+================================= */
+
+.hero-interno{
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-interno img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-interno .overlay-oscuro{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-interno .hero-contenido{
+    position:absolute;
+    text-align:center;
+    color:white;
+    max-width:800px;
+    padding:20px;
+}
+
+.hero-interno h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero-interno p{
+    font-size:18px;
+}
+
+/* =================================
+   SLIDER DE IMÁGENES HERO INTERNO
+================================= */
+
+.slider-fondo{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.slider-fondo img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-fondo img.active{
+    opacity:1;
+}
+
 
 /* ================================
    BOTONES DEL HERO (LANDING)
@@ -338,8 +417,10 @@ nav {
 .alerta-tsu p:last-child { margin-bottom: 0; }
 
 .oferta-grid-landing {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px; padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px;
 }
 
 .landing-card {
@@ -349,22 +430,48 @@ nav {
   display: flex; flex-direction: column; height: 100%;
 }
 
+/* ==============================================
+   EFECTO HOVER TARJETAS
+============================================== */
 .landing-card:hover {
-  transform: translateY(-8px); box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
   border-color: var(--naranja-upm);
 }
 
+/* ==============================================
+   IMÁGENES DE LAS CARRERAS (TARJETAS)
+============================================== */
 .img-carrera-landing {
-  width: 100%; height: 160px; object-fit: cover;
+  width: 100%;
+  height: 170px; /* Imagen un poco más alta */
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
+/* efecto visual al pasar el mouse */
+.landing-card:hover .img-carrera-landing {
+  transform: scale(1.05);
+}
+
+/* ==============================================
+   CONTENIDO DE LAS TARJETAS
+============================================== */
 .contenido-card-landing {
-  padding: 20px; flex-grow: 1; display: flex; flex-direction: column;
-  justify-content: space-between; text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .contenido-card-landing h3 {
-  color: var(--morado-upm); font-size: 1.1rem; line-height: 1.3; margin-bottom: 15px;
+  color: var(--morado-upm);
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 10px;
 }
 
 .tsu-landing {
@@ -652,13 +759,6 @@ h1::after {
    FORZAR TAMAÑO DE IMÁGENES (QUÉ PASA EN LA UPM)
 ============================================== */
 .noticia-card img {
-  width: 100% !important;
-  height: 200px !important;
-  object-fit: cover !important;
-}
-
-/* En caso de que estés usando la clase landing-card sin querer */
-.landing-card img {
   width: 100% !important;
   height: 200px !important;
   object-fit: cover !important;
