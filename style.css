@@ -1041,16 +1041,142 @@ section p { text-align: justify; margin-bottom: 20px; line-height: 1.75; font-si
 /* ===============================
    MICROSITIOS (LEVANTAMIENTO 3D)
 ================================ */
-.seccion-micrositios { background-color: #F5F2E8; padding: 60px 10%; text-align: center; }
-.titulo-seccion { font-family: 'Arial Black', sans-serif; font-size: 3rem; font-weight: 900; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 60px; display: inline-block; position: relative; background: linear-gradient(to right, #E87624 0%, #E87624 40%, #8E44AD 65%, #86B81B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); animation: flotarMachin 4s ease-in-out infinite; border-bottom: none !important; }
-.titulo-seccion::after { content: ''; position: absolute; bottom: -20px; left: 10%; width: 80%; height: 15px; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20"><path d="M0,15 C50,5 150,25 200,15" stroke="%2386B81B" stroke-width="4" fill="none" stroke-linecap="round"/></svg>'); background-size: 100% 100%; background-repeat: no-repeat; filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1)); }
-@keyframes flotarMachin { 0%, 100% { transform: translateY(0); filter: drop-shadow(0 5px 5px rgba(0,0,0,0.05)); } 50% { transform: translateY(-10px); filter: drop-shadow(0 15px 10px rgba(0,0,0,0.15)); } }
-.grid-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; max-width: 1100px; margin: 40px auto; padding: 20px; }
-.logo-item { text-decoration: none; background: #ffffff; padding: 35px 25px; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px solid #F5F2E8; transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); position: relative; }
-.logo-item:hover { transform: translateY(-15px); border-color: #86B81B; box-shadow: 0 15px 30px rgba(232, 118, 36, 0.2), 0 5px 15px rgba(142, 68, 173, 0.15), 0 20px 40px rgba(134, 184, 27, 0.1); }
-.logo-item img { width: 100%; max-width: 180px; height: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.6; transition: all 0.4s ease; }
-.logo-item:hover img { filter: grayscale(0%); opacity: 1; transform: scale(1.08); }
-@media (max-width: 768px) { .grid-logos { grid-template-columns: repeat(2, 1fr); } }
+.seccion-micrositios {
+  background-color: #F5F2E8;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* ===== TÍTULO ===== */
+.titulo-seccion {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  display: inline-block;
+  position: relative;
+
+  background: linear-gradient(
+    to right,
+    #E87624 0%,
+    #E87624 40%,
+    #8E44AD 65%,
+    #86B81B 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  text-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
+  animation: flotarMachin 4s ease-in-out infinite;
+  border-bottom: none !important;
+}
+
+/* ===== LÍNEA DECORATIVA DEBAJO DEL TÍTULO ===== */
+.titulo-seccion::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  width: 80%;
+  height: 15px;
+
+  /* SVG CORRECTO EN UNA SOLA LÍNEA */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20'><path d='M0,15 C50,5 150,25 200,15' stroke='%2386B81B' stroke-width='4' fill='none' stroke-linecap='round'/></svg>");
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
+}
+
+/* ===== ANIMACIÓN FLOTANTE ===== */
+@keyframes flotarMachin {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.05));
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 15px 10px rgba(0,0,0,0.15));
+  }
+}
+
+/* ===== GRID RESPONSIVE ===== */
+.grid-logos {
+  display: grid;
+
+  /* 🔥 Se adapta automáticamente a cualquier pantalla */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 50px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ===== TARJETAS ===== */
+.logo-item {
+  text-decoration: none;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #F5F2E8;
+
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  /* ⭐ SOLUCIÓN DEFINITIVA: siempre cuadradas */
+  aspect-ratio: 1 / 1;
+}
+
+/* ===== HOVER ===== */
+.logo-item:hover {
+  transform: translateY(-15px);
+  border-color: #86B81B;
+
+  box-shadow:
+    0 15px 30px rgba(232, 118, 36, 0.2),
+    0 5px 15px rgba(142, 68, 173, 0.15),
+    0 20px 40px rgba(134, 184, 27, 0.1);
+}
+
+/* ===== IMÁGENES ===== */
+.logo-item img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.6;
+
+  transition: all 0.4s ease;
+}
+
+/* ===== EFECTO IMAGEN HOVER ===== */
+.logo-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* ===== TEXTO OPCIONAL ===== */
+.logo-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
 
 /* Elemento suelto del micrositio (En landing y otras) */
 .micrositio-centro { display: flex; justify-content: center; margin-top: 25px; }
