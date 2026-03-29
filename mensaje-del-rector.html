@@ -38,113 +38,70 @@
 
 <body>
 <div id="header-container"></div>
+<section class="hero-interno" style="position: relative; min-height: 350px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 60px 20px; background-color: #2E2A77;">
 
-<!-- ======================================
-BANNER INTERNO (TODAS LAS PÁGINAS)
-====================================== -->
-
-<section class="hero-interno">
-
-    <div class="slider-fondo">
-        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
-        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
-        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
+    <div class="slider-fondo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <div class="overlay-oscuro"></div>
+    <div class="overlay-oscuro" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.60); z-index: 2;"></div>
 
-    <div class="hero-contenido">
+    <div class="hero-contenido" style="position: relative; z-index: 3; text-align: center; width: 100%; max-width: 900px;">
         
-        <h1>Mensaje del Rector</h1>
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); color: #FFFFFF !important; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.9); font-weight: 900; text-transform: uppercase; line-height: 1.2;">
+            Mensaje del Rector
+        </h1>
         
-        <p style="color: #FFFFFF !important; font-size: 1.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.9); margin: 0 auto; max-width: 700px; line-height: 1.6;">
+        <div style="color: #FFFFFF !important; font-size: clamp(1rem, 3vw, 1.2rem); text-shadow: 2px 2px 4px rgba(0,0,0,0.9); margin: 0 auto; max-width: 700px; line-height: 1.6;">
             Un mensaje para la comunidad universitaria sobre el futuro y la visión de nuestra institución.
-        </p>
+        </div>
 
     </div>
 
 </section>
 
-<!-- =========================
-        CONTENIDO PRINCIPAL
-========================= -->
-<main class="contenedor-about">
+<main class="contenedor-about" style="position: relative; z-index: 10; max-width: 1200px; margin: 60px auto; padding: 0 20px; font-family: sans-serif;">
 
-<section class="seccion mensaje-rector">
+    <section class="seccion mensaje-rector" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
 
+        <div class="rector-imagen" style="flex: 0 0 auto; width: 100%; max-width: 350px; margin: 0 auto;">
+            <img src="assets/img/rector.jpeg" alt="Rector de la UPM" 
+                 style="width: 100% !important; height: auto !important; display: block !important; object-fit: contain !important; 
+                        border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+        </div>
 
-<div class="rector-imagen">
-<img src="assets/img/rector.jpeg" alt="Rector de la UPM">
-</div>
+        <div class="rector-texto" style="flex: 1 1 500px; background: #ffffff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
 
-<div class="rector-texto">
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">Es un honor dirigirme a la sociedad de esta región como nuevo rector de la Universidad Politécnica Mesoamericana. Desde el momento en que asumí esta gran responsabilidad, por la confianza otorgada por el gobernador del estado, el C. Javier May Rodríguez, me he entregado de tiempo completo a desempeñar este cargo con compromiso, entrega y dedicación. Mi propósito es claro: continuar cumpliendo con los objetivos, misión y visión de nuestra universidad, en sintonía con las necesidades del entorno social, ambiental y económico; así como con los ejes rectores del Gobierno Federal en el marco de la Nueva Escuela Mexicana. Así seguiré actuando hasta el último día de mi gestión.</p>
 
-<p>Es un honor dirigirme a la sociedad de esta región como nuevo rector de la 
-Universidad Politécnica Mesoamericana. Desde el momento en que asumí esta 
-gran responsabilidad, por la confianza otorgada por el gobernador del
-estado, el C. Javier May Rodríguez, me he entregado de tiempo completo a
-desempeñar este cargo con compromiso, entrega y dedicación. Mi propósito
-es claro: continuar cumpliendo con los objetivos, misión y visión de nuestra 
-universidad, en sintonía con las necesidades del entorno social, ambiental y 
-económico; así como con los ejes rectores del Gobierno Federal en el marco de 
-la Nueva Escuela Mexicana. Así seguiré actuando hasta el último día de mi gestión.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">Nuestra universidad forma parte de los organismos de educación superior descentralizados del Gobierno del Estado de Tabasco, y pertenece al subsistema nacional de Universidades Tecnológicas y Politécnicas. Fue fundada en 2006 con una misión clara: formar profesionales altamente competentes, comprometidos con la investigación científico-tecnológica y con una vocación de liderazgo orientada al desarrollo sustentable de la región mesoamericana. Nuestra visión es ser reconocidos por la excelencia académica y la vinculación efectiva con los sectores productivos, sociales y privados, contribuyendo a una educación pertinente a las demandas de la sociedad.</p>
 
-<p>Nuestra universidad forma parte de los organismos de educación superior
-descentralizados del Gobierno del Estado de Tabasco, y pertenece al subsistema 
-nacional de Universidades Tecnológicas y Politécnicas. Fue fundada en 2006 con 
-una misión clara: formar profesionales altamente competentes, comprometidos con 
-la investigación científico-tecnológica y con una vocación de liderazgo orientada 
-al desarrollo sustentable de la región mesoamericana. Nuestra visión es ser 
-reconocidos por la excelencia académica y la vinculación efectiva con los 
-sectores productivos, sociales y privados, contribuyendo a una educación pertinente
-a las demandas de la sociedad.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">Estamos ubicados en una región privilegiada, entre dos importantes Áreas Naturales Protegidas, lo que nos compromete aún más con su cuidado y preservación. Por un lado, el Área de Protección de Flora y Fauna Cañón del Usumacinta, atravesada por el majestuoso río Usumacinta —el más caudaloso del país—, parte del Corredor Biológico Mesoamericano. Por otro, la recientemente declarada Reserva de la Biosfera Wanha’ (Río de las Codornices), establecida durante el sexenio del Presidente Andrés Manuel López Obrador, que abarca la cuenca media del río San Pedro, considerado uno de los más limpios y bellos de México. Nuestra universidad se encuentra cerca en el núcleo de esta reserva, lo cual reafirma nuestro compromiso con el medio ambiente y la acción climática.</p>
 
-<p>Estamos ubicados en una región privilegiada, entre dos importantes Áreas Naturales 
-Protegidas, lo que nos compromete aún más con su cuidado y preservación. Por un 
-lado, el Área de Protección de Flora y Fauna Cañón del Usumacinta, atravesada por
-el majestuoso río Usumacinta —el más caudaloso del país—, parte del Corredor Biológico
-Mesoamericano. Por otro, la recientemente declarada Reserva de la Biosfera Wanha’ 
-(Río de las Codornices), establecida durante el sexenio del Presidente Andrés Manuel
-López Obrador, que abarca la cuenca media del río San Pedro, considerado uno
-de los más limpios y bellos de México. Nuestra universidad se encuentra cerca en 
-el núcleo de esta reserva, lo cual reafirma nuestro compromiso con el medio ambiente
-y la acción climática.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">A los más de mil egresados de nuestros distintos programas educativos les expreso mi reconocimiento. Lleven siempre en alto los conocimientos, principios y valores adquiridos en esta casa de estudios. Ustedes son nuestros principales embajadores y promotores ante la sociedad.</p>
 
-<p>A los más de mil egresados de nuestros distintos programas 
-educativos les expreso mi reconocimiento. Lleven siempre en alto los conocimientos, 
-principios y valores adquiridos en esta casa de estudios. Ustedes son nuestros 
-principales embajadores y promotores ante la sociedad.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">A quienes aspiran a formar parte de la UPM, les aseguramos que no se arrepentirán. Aquí encontrarán una oportunidad única para construir su futuro profesional y ampliar sus horizontes de bienestar y progreso personal.</p>
 
-<p>A quienes aspiran a formar parte de la UPM, les aseguramos que no se arrepentirán. Aquí 
-encontrarán una oportunidad única para construir su futuro profesional y ampliar sus 
-horizontes de bienestar y progreso personal.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">A los docentes, mi más sincero agradecimiento. Su labor es invaluable. Educar a los jóvenes es una tarea que exige compromiso afectivo, empatía y vocación. Recuerden que un maestro que enseña con pasión deja huella en sus estudiantes, al igual que estos dejan huella en su maestro. ¡Formemos juntos a los líderes del mañana!</p>
 
-<p>A los docentes, mi más sincero agradecimiento. Su labor es invaluable. Educar a los
-jóvenes es una tarea que exige compromiso afectivo, empatía y vocación. Recuerden que 
-un maestro que enseña con pasión deja huella en sus estudiantes, al igual que estos dejan
-huella en su maestro. ¡Formemos juntos a los líderes del mañana!</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 20px;">Finalmente, a los padres y tutores, gracias por confiar en nosotros. Asumimos con responsabilidad el privilegio de complementar la educación de sus hijos. Somos una institución que promueve la ética, el respeto, la inclusión y los buenos valores. Les pedimos que caminemos juntos en la misma dirección: Fomentemos el orden y la disciplina, tanto en el hogar como en la universidad, para lograr un impacto positivo y duradero en la vida de nuestros estudiantes.</p>
 
-<p>Finalmente, a los padres y tutores, gracias por confiar en nosotros. Asumimos con 
-responsabilidad el privilegio de complementar la educación de sus hijos. Somos una 
-institución que promueve la ética, el respeto, la inclusión y los buenos valores. Les 
-pedimos que caminemos juntos en la misma dirección: Fomentemos el orden y la disciplina, 
-tanto en el hogar como en la universidad, para lograr un impacto positivo y duradero en 
-la vida de nuestros estudiantes.</p>
+            <p style="color: #333333 !important; font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 30px;"><strong>Sigamos construyendo juntos una universidad con propósito, compromiso y orgullo mesoamericano.</strong></p>
 
-<p><strong>Sigamos construyendo juntos una universidad con propósito, compromiso y orgullo 
-mesoamericano.</strong></p>
+            <p class="firma-rector" style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #F7941D; font-size: 1.2rem; color: #2E2A77; line-height: 1.6;">
+                <strong>Atentamente:</strong><br>
+                M.C. José Cisneros Domínguez<br>
+                Rector
+            </p>
 
-<p class="firma-rector">
-<strong>Atentamente:</strong><br>
-M.C. José Cisneros Domínguez<br>
-Rector
-</p>
+        </div>
 
-</div>
-
-</section>
+    </section>
 
 </main>
+
 
 <div id="footer-container"></div>
 

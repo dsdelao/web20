@@ -2,116 +2,70 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
-
 <title>CONOCER | Universidad Politécnica Mesoamericana</title>
-
 <meta name="description" content="Entidad de Certificación y Evaluación del Sistema Nacional de Competencias en la Universidad Politécnica Mesoamericana.">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" href="assets/icon/favicon.png">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
-
 <div id="header-container"></div>
 
-<!-- ======================================
-BANNER INTERNO (TODAS LAS PÁGINAS)
-====================================== -->
+<section class="hero-interno" style="position: relative; min-height: 350px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 60px 20px; background-color: #2E2A77;">
 
-<section class="hero-interno">
-
-    <!-- Slider de imágenes -->
-    <div class="slider-fondo">
-
-        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
-
-        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
-
-        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
-
+    <div class="slider-fondo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <!-- Capa oscura -->
-    <div class="overlay-oscuro"></div>
+    <div class="overlay-oscuro" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.60); z-index: 2;"></div>
 
-    <!-- Texto del banner -->
-    <div class="hero-contenido">
+    <div class="hero-contenido" style="position: relative; z-index: 3; text-align: center; width: 100%; max-width: 900px;">
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); color: #FFFFFF !important; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.9); font-weight: 900; text-transform: uppercase; line-height: 1.2;">
+            CONOCER
+        </h1>
+        <div style="color: #FFFFFF !important; font-size: clamp(1rem, 3vw, 1.2rem); text-shadow: 2px 2px 4px rgba(0,0,0,0.9); margin: 0 auto; max-width: 700px; line-height: 1.6;">
+            El Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) promueve el desarrollo profesional mediante la evaluación y certificación de competencias laborales en distintos sectores productivos.
+        </div>
+    </div>
 
-        <h1>CONOCER</h1>
+</section>
 
-        <p>
-         El Consejo Nacional de Normalización y Certificación de Competencias
-         Laborales (CONOCER) promueve el desarrollo profesional mediante la
-         evaluación y certificación de competencias laborales en distintos
-         sectores productivos. 
+<main style="position: relative; z-index: 10; max-width: 900px; margin: 60px auto; padding: 0 20px; line-height: 1.7; color: #475569;">
 
+    <section class="contenido-carrera" style="background: #ffffff; padding: 50px 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #E2E8F0; text-align: center;">
 
+        <h2 style="color: #2E2A77; margin-bottom: 25px; font-size: 2rem; border-bottom: 2px solid #6FB341; padding-bottom: 10px; display: inline-block;">
+            Entidad de Certificación y Evaluación
+        </h2>
+
+        <p style="margin-bottom: 20px; font-size: 1.1rem; text-align: justify;">
+            La Universidad Politécnica Mesoamericana forma parte de la Red CONOCER, siendo acreditada en el año 2019 como Entidad de Certificación y Evaluación (ECE) del Sistema Nacional de Competencias.
         </p>
 
-    </div>
+        <p style="margin-bottom: 40px; font-size: 1.1rem; text-align: justify;">
+            Esta acreditación permite a la universidad participar en procesos de evaluación y certificación de competencias laborales, contribuyendo al desarrollo profesional de las personas y al fortalecimiento de la calidad en distintos sectores productivos.
+        </p>
 
-</section>
+        <a href="https://conocer.gob.mx/acciones_programas/conocer-mision-vision-politica-objetivos-calidad/" target="_blank" style="display: inline-block; transition: transform 0.3s ease;">
+            <img src="assets/img/conocer.png" alt="Logotipo CONOCER" style="max-width: 100%; width: 350px; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        </a>
+        
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #94A3B8;">
+            * Haz clic en la imagen para conocer más sobre nuestra misión, visión y políticas de calidad.
+        </p>
 
-
-
-<!-- ================================
-CONTENIDO
-================================ -->
-
-<main>
-
-<section class="contenido-carrera">
-
-<h2>Entidad de Certificación y Evaluación</h2>
-
-<p>
-
-La Universidad Politécnica Mesoamericana forma parte de la Red CONOCER,
-siendo acreditada en el año 2019 como Entidad de Certificación y
-Evaluación (ECE) del Sistema Nacional de Competencias.
-
-</p>
-
-<p>
-
-Esta acreditación permite a la universidad participar en procesos de
-evaluación y certificación de competencias laborales, contribuyendo
-al desarrollo profesional de las personas y al fortalecimiento de la
-calidad en distintos sectores productivos.
-
-</p>
-
-
-<!-- IMAGEN ENLACE (REEMPLAZA EL BOTÓN) -->
-
-<a href="https://conocer.gob.mx/acciones_programas/conocer-mision-vision-politica-objetivos-calidad/"
-target="_blank">
-
-<img src="assets/img/conocer.png" alt="CONOCER">
-
-</a>
-
-</section>
+    </section>
 
 </main>
 
 <div id="footer-container"></div>
-
-<a href="https://wa.me/529341347639?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
-class="whatsapp-float"
-target="_blank">
-
-<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
-
-</a>
 
 <script src="faq.js"></script>
 <script src="js/cargar-componentes.js"></script>

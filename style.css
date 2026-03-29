@@ -3260,93 +3260,162 @@ video,
 }
 
 /* ==============================================
-   HERO INTERNO (BANNERS DE PÁGINAS SECUNDARIAS)
+   HERO INTERNO (BANNERS DE PÁGINAS SECUNDARIAS) - FIX
 ============================================== */
 
 .hero-interno {
-  position: relative;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background-color: var(--morado-upm, #2E2A77); /* Color de fondo por si tardan en cargar las fotos */
+  position: relative !important;
+  min-height: 350px !important; /* Magia: Crece automáticamente si el texto es largo */
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 60px 20px !important; /* Le da aire arriba y abajo al texto */
+  background-color: var(--morado-upm, #2E2A77) !important;
 }
 
-/* --- SLIDER DE IMÁGENES --- */
+/* --- SLIDER Y CAPA OSCURA --- */
 .slider-fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Nivel 1: Hasta el fondo */
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
 }
 
 .slider-fondo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0; /* Ocultas por defecto */
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .slider-fondo img.active {
-  opacity: 1; /* Solo la clase active se ve */
+  opacity: 1 !important;
 }
 
-/* --- CAPA OSCURA --- */
 .hero-interno .overlay-oscuro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55); /* Oscurece la foto para leer el texto */
-  z-index: 2; /* Nivel 2: Sobre las fotos */
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.60) !important; /* Un pelín más oscuro para leer mejor */
+  z-index: 2 !important;
 }
 
-/* --- CONTENIDO Y TEXTOS --- */
+/* --- CONTENIDO Y TEXTOS (BLINDADOS) --- */
 .hero-interno .hero-contenido {
-  position: relative;
-  z-index: 3; /* Nivel 3: Hasta arriba para que se lea y se pueda seleccionar */
-  text-align: center;
-  color: #ffffff;
-  max-width: 900px;
-  padding: 0 20px;
-  width: 100%;
+  position: relative !important;
+  z-index: 3 !important; 
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 900px !important;
 }
 
-.hero-interno h1 {
-  font-size: 3rem; /* Tamaño para PC */
-  color: #ffffff;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para resaltar */
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.hero-interno p {
+.hero-interno .hero-contenido h1 {
+  font-size: 3rem !important;
   color: #FFFFFF !important;
+  margin-bottom: 15px !important;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+}
+
+.hero-interno .hero-contenido p {
   font-size: 1.2rem !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9) !important;
   margin: 0 auto !important;
-  max-width: 700px !important;
+  max-width: 750px !important;
   line-height: 1.6 !important;
 }
 
 /* --- ADAPTACIÓN PARA CELULARES --- */
 @media (max-width: 768px) {
   .hero-interno {
-    height: 250px; /* Banner más bajito en celular para no robar tanta pantalla */
+    min-height: 280px !important; /* Se ajusta pero respeta el contenido */
+    padding: 50px 15px !important;
   }
-  .hero-interno h1 {
-    font-size: 2rem; /* Letra más pequeña para que no se salga */
+  .hero-interno .hero-contenido h1 {
+    font-size: 2rem !important;
   }
-  .hero-interno p {
-    font-size: 1rem;
+  .hero-interno .hero-contenido p {
+    font-size: 1.05rem !important;
   }
 }
+
+
+/* ==============================================
+   SECCIÓN: MENSAJE DEL RECTOR
+============================================== */
+
+.mensaje-rector {
+  display: flex !important;
+  flex-direction: column !important; /* En celular se apilan */
+  gap: 40px !important;
+  align-items: flex-start !important;
+  max-width: 1200px !important;
+  margin: 60px auto !important;
+  padding: 0 20px !important;
+}
+
+/* --- DISEÑO PARA PC (Lado a lado) --- */
+@media (min-width: 900px) {
+  .mensaje-rector {
+    flex-direction: row !important; /* En PC se ponen lado a lado */
+  }
+}
+
+/* --- CAJA DE LA IMAGEN --- */
+.rector-imagen {
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+  position: sticky !important; /* Efecto cool: la foto sigue al usuario al bajar el texto */
+  top: 120px !important; 
+}
+
+.rector-imagen img {
+  width: 100% !important;
+  height: auto !important; /* <--- LA MAGIA QUE EVITA QUE SE CORTE */
+  object-fit: contain !important;
+  border-radius: 15px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+  display: block !important;
+}
+
+/* --- CAJA DEL TEXTO --- */
+.rector-texto {
+  width: 100% !important;
+  flex: 1 !important; /* Toma todo el espacio restante a la derecha */
+  background: #ffffff !important;
+  padding: 40px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05) !important;
+}
+
+.rector-texto p {
+  color: #333333 !important; /* Aseguramos que el texto sea oscuro y legible */
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+  margin-bottom: 20px !important;
+  text-shadow: none !important; /* Quitamos cualquier sombra de los banners */
+}
+
+.rector-texto .firma-rector {
+  margin-top: 30px !important;
+  padding-top: 20px !important;
+  border-top: 2px solid #F7941D !important; /* Línea naranja divisoria */
+  font-size: 1.2rem !important;
+  color: #2E2A77 !important; /* Morado UPM para la firma */
+}
+

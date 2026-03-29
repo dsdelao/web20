@@ -365,13 +365,13 @@ HERO PRINCIPAL
     </p>
 
     <div class="botones-hero-contenedor">
-      <a href="#oferta-educativa" class="btn-naranja-hero">Explorar Carreras →</a>
-      <a href="#admision" class="btn-outline-hero">Iniciar Proceso de Admisión</a>
+      <a href="carreras.html" class="btn-naranja-hero">Explorar Carreras →</a>
+      <a href="admisiones.html" class="btn-outline-hero">Iniciar Proceso de Admisión</a>
     </div>
 
     <div class="hero-estadisticas">
       <div class="stat-item">
-        <h3>4,500+</h3>
+        <h3>1,000+</h3>
         <p>Egresados</p>
       </div>
       <!--<div class="stat-item">
@@ -384,8 +384,12 @@ HERO PRINCIPAL
       </div>
       <div class="stat-item">
         <h3>5</h3>
-        <p>Programas de Ingeniería</p>
+        <p>Programas Educativo</p>
       </div>
+      <div class="stat-item">
+        <h3>3</h3>
+        <p>Modalidades: Escolarizado, Mixto y Dual</p>
+      </div>      
     </div>
 
   </div>
@@ -393,29 +397,31 @@ HERO PRINCIPAL
 
 <div style="height: 30px; width: 100%; clear: both; background: transparent;"></div>
 
-<section class="beneficios-upm" style="background-color: var(--naranja-upm, #FF7A00); padding: 40px 15px; color: white; text-align: center;">
+<section class="beneficios-upm" style="background-color: #F8FAFC; padding: 80px 20px; text-align: center;">
   <div style="max-width: 1200px; margin: 0 auto;">
     
-    <h2 style="font-size: 2.2rem; margin-bottom: 30px; font-weight: 800; color: #FFFFFF !important;">La mayor ventaja competitiva de la región 🚀</h2>
+    <h2 style="font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 50px; font-weight: 900; color: #2E2A77 !important;">
+      La mayor ventaja competitiva de la región <span style="font-size: 2rem;">🚀</span>
+    </h2>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
       
-      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
-        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎁</div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: white !important;">Inscripción GRATIS</h3>
-        <p style="font-size: 1rem; margin: 0; color: white !important;">Y pase directo para que asegures tu lugar sin complicaciones.</p>
+      <div style="background: #FFFFFF; padding: 40px 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid #F7941D; transition: transform 0.3s ease;">
+        <div style="font-size: 3rem; margin-bottom: 20px;">🎁</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1E293B !important; font-weight: 700;">Inscripción GRATIS</h3>
+        <p style="font-size: 1.05rem; margin: 0; color: #475569 !important; line-height: 1.6;">Y pase directo para que asegures tu lugar sin complicaciones.</p>
       </div>
       
-      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
-        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎓</div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: white !important;">Doble Titulación</h3>
-        <p style="font-size: 1rem; margin: 0; color: white !important;">Obtén 2 títulos y 2 cédulas profesionales en solo 3 años y medio.</p>
+      <div style="background: #FFFFFF; padding: 40px 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid #6FB341; transition: transform 0.3s ease;">
+        <div style="font-size: 3rem; margin-bottom: 20px;">🎓</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1E293B !important; font-weight: 700;">Doble Titulación</h3>
+        <p style="font-size: 1.05rem; margin: 0; color: #475569 !important; line-height: 1.6;">Obtén 2 títulos y 2 cédulas profesionales en solo 3 años y medio.</p>
       </div>
 
-      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
-        <div style="font-size: 2.5rem; margin-bottom: 10px;">🚌</div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: white !important;">Apoyo Total</h3>
-        <p style="font-size: 1rem; margin: 0; color: white !important;">Programas de becas de alimentación y transporte para nuestros estudiantes.</p>
+      <div style="background: #FFFFFF; padding: 40px 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid #2E2A77; transition: transform 0.3s ease;">
+        <div style="font-size: 3rem; margin-bottom: 20px;">🚌</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1E293B !important; font-weight: 700;">Apoyo Total</h3>
+        <p style="font-size: 1.05rem; margin: 0; color: #475569 !important; line-height: 1.6;">Programas de becas de alimentación y transporte para nuestros estudiantes.</p>
       </div>
       
     </div>
@@ -430,7 +436,7 @@ HERO PRINCIPAL
       <a href="petrolera.html" class="card-programa" style="background-image: url('assets/img/carreras/ip.jpg'); min-height: 280px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 15px; overflow: hidden; position: relative; text-decoration: none; background-size: cover; background-position: center; padding: 25px;">
         <div class="overlay-gradiente" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); z-index: 1;"></div>
         <div class="info-programa" style="position: relative; z-index: 2;">
-          <span class="etiqueta-tsu" style="color: var(--naranja-upm, #F7941D); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
+          <span class="etiqueta-tsu" style="color: #FFFFFF; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
           <h3 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Ingeniería Petrolera</h3>
         </div>
       </a>
@@ -438,7 +444,7 @@ HERO PRINCIPAL
       <a href="itiiid.html" class="card-programa" style="background-image: url('assets/img/carreras/iti.jpg'); min-height: 280px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 15px; overflow: hidden; position: relative; text-decoration: none; background-size: cover; background-position: center; padding: 25px;">
         <div class="overlay-gradiente" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); z-index: 1;"></div>
         <div class="info-programa" style="position: relative; z-index: 2;">
-          <span class="etiqueta-tsu" style="color: var(--naranja-upm, #F7941D); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
+          <span class="etiqueta-tsu" style="color: #FFFFFF; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
           <h3 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Tecnologías de la Información e Innovación Digital</h3>
         </div>
       </a>
@@ -446,7 +452,7 @@ HERO PRINCIPAL
       <a href="manejo-recursos.html" class="card-programa" style="background-image: url('assets/img/carreras/imrn.jpg'); min-height: 280px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 15px; overflow: hidden; position: relative; text-decoration: none; background-size: cover; background-position: center; padding: 25px;">
         <div class="overlay-gradiente" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); z-index: 1;"></div>
         <div class="info-programa" style="position: relative; z-index: 2;">
-          <span class="etiqueta-tsu" style="color: var(--naranja-upm, #F7941D); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
+          <span class="etiqueta-tsu" style="color: #FFFFFF; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU e Ingeniería</span>
           <h3 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Manejo de Recursos Naturales</h3>
         </div>
       </a>
@@ -454,7 +460,7 @@ HERO PRINCIPAL
       <a href="turismo.html" class="card-programa" style="background-image: url('assets/img/carreras/laet.jpg'); min-height: 280px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 15px; overflow: hidden; position: relative; text-decoration: none; background-size: cover; background-position: center; padding: 25px;">
         <div class="overlay-gradiente" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); z-index: 1;"></div>
         <div class="info-programa" style="position: relative; z-index: 2;">
-          <span class="etiqueta-tsu" style="color: var(--naranja-upm, #F7941D); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU y Licenciatura</span>
+          <span class="etiqueta-tsu" style="color: #FFFFFF; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU y Licenciatura</span>
           <h3 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Gestión y Desarrollo Turístico</h3>
         </div>
       </a>
@@ -462,7 +468,7 @@ HERO PRINCIPAL
       <a href="comercio.html" class="card-programa" style="background-image: url('assets/img/carreras/lcia.jpg'); min-height: 280px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 15px; overflow: hidden; position: relative; text-decoration: none; background-size: cover; background-position: center; padding: 25px;">
         <div class="overlay-gradiente" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); z-index: 1;"></div>
         <div class="info-programa" style="position: relative; z-index: 2;">
-          <span class="etiqueta-tsu" style="color: var(--naranja-upm, #F7941D); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU y Licenciatura</span>
+          <span class="etiqueta-tsu" style="color: #FFFFFF; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">TSU y Licenciatura</span>
           <h3 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Comercio Internacional y Aduanas</h3>
         </div>
       </a>
@@ -604,15 +610,16 @@ HERO PRINCIPAL
       <div class="grid-noticias-fb" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px; justify-items: center;">
         
         <div class="tarjeta-fb" style="width: 100%; max-width: 350px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid0w2s4fCcs78DtoaBQ7tCQBbacMbv7UJ1fL3Dfh3ZYJxvRwsr2t8mS3sYbTKvUp5qql&show_text=false&width=350&v=2" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid0CV3oWoq2VaBZJsKGgvPedJmFyjMeTexyfzsbL2z4WXf3YNK7Q2Zk5bWA5PXC4mBNl&show_text=true&width=350&v=2" width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          
         </div>
 
         <div class="tarjeta-fb" style="width: 100%; max-width: 350px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid022Kk8LhRZprBgBSM4MtNkRmCAQjko36iVd2TLvtQWqW6E1Zx9jQJuw5JGo29iu5WKl&show_text=false&width=350&v=2" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid02NRZusUB7vm56wmkoj6gQCW7T9FYyabjMXaY15aFJg7kTDFMVG9qAp5G5XEF6RcTJl&show_text=true&width=350&v=2" width="500" height="734" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
 
         <div class="tarjeta-fb" style="width: 100%; max-width: 350px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid02A5FdxsuvzdoTNERRHDkvpxC5cgZ23L31rFUCrdnC6Zpj6kPLP1tdHXVS8MBhgsbml&show_text=false&width=350&v=2" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fupmdifusion%2Fposts%2Fpfbid02248gh1TCppJbpTQoXehUdcCmbMCUiMkUZG1Z1UTfw3hhknZerdBJKPKNEGjJ32DDl&show_text=true&width=350&v=2" width="500" height="670" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
 
       </div>

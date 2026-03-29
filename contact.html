@@ -2,245 +2,212 @@
 <html lang="es">
 
 <head>
-
-<!-- ================================
-        META DATOS Y SEO
-================================ -->
-
 <meta charset="UTF-8">
-
 <title>Contacto | Universidad Politécnica Mesoamericana</title>
-
 <meta name="description" content="Ponte en contacto con la Universidad Politécnica Mesoamericana. Consulta dirección, teléfonos, correos electrónicos y ubicación.">
-
 <meta name="keywords" content="contacto UPM, universidad en Tenosique, universidad Tabasco">
-
 <meta name="author" content="Universidad Politécnica Mesoamericana">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 <link rel="icon" href="assets/icon/favicon.png" type="image/png">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
 <div id="header-container"></div>
 
-<!-- ======================================
-BANNER INTERNO (TODAS LAS PÁGINAS)
-====================================== -->
+<section class="hero-interno" style="position: relative; min-height: 350px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 60px 20px; background-color: #2E2A77;">
 
-<section class="hero-interno">
-
-    <!-- Slider de imágenes -->
-    <div class="slider-fondo">
-
-        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
-
-        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
-
-        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
-
+    <div class="slider-fondo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <!-- Capa oscura -->
-    <div class="overlay-oscuro"></div>
+    <div class="overlay-oscuro" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.60); z-index: 2;"></div>
 
-    <!-- Texto del banner -->
-    <div class="hero-contenido">
-
-       <h1>Contáctanos</h1>
-
-<p >
-
-En la <strong>Universidad Politécnica Mesoamericana</strong> estamos comprometidos con brindar
-información y atención oportuna a estudiantes, aspirantes y público en general.
-Si deseas conocer más sobre nuestra oferta educativa, procesos de admisión
-o servicios universitarios, puedes comunicarte con nosotros a través de
-los siguientes medios.
-
-</p>
+    <div class="hero-contenido" style="position: relative; z-index: 3; text-align: center; width: 100%; max-width: 900px;">
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); color: #FFFFFF !important; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.9); font-weight: 900; text-transform: uppercase; line-height: 1.2;">
+            Contáctanos
+        </h1>
+        <div style="color: #FFFFFF !important; font-size: clamp(1rem, 3vw, 1.2rem); text-shadow: 2px 2px 4px rgba(0,0,0,0.9); margin: 0 auto; max-width: 700px; line-height: 1.6;">
+            En la <strong>Universidad Politécnica Mesoamericana</strong> estamos comprometidos con brindar información y atención oportuna a estudiantes, aspirantes y público en general.
+        </div>
     </div>
 
 </section>
 
+<main style="position: relative; z-index: 10; max-width: 1100px; margin: 60px auto; padding: 0 20px; line-height: 1.7; color: #475569;">
 
+    <section class="contenido-carrera" style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #E2E8F0; margin-bottom: 50px;">
+        
+        <h2 style="color: #2E2A77; margin-bottom: 30px; font-size: 2rem; border-bottom: 2px solid #6FB341; padding-bottom: 10px; display: inline-block;">Información de Contacto</h2>
 
-<!-- ================================
-        CONTENIDO PRINCIPAL
-================================ -->
+        <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #1E293B; font-size: 1.2rem; margin-bottom: 10px;">📞 Teléfonos</h3>
+                <p style="margin: 0;"><strong>Institucional:</strong> +52 934 342 46 71</p>
+                <p style="margin: 0;"><strong>Difusión:</strong> +52 934 134 76 39</p>
+            </div>
 
-<main>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #1E293B; font-size: 1.2rem; margin-bottom: 10px;">✉️ Correos Electrónicos</h3>
+                <p style="margin: 0;"><strong>Difusión:</strong> <a href="mailto:difusion@upm.edu.mx" style="color: #2E2A77; text-decoration: none; font-weight: 500;">difusion@upm.edu.mx</a></p>
+                <p style="margin: 0;"><strong>Rectoría:</strong> <a href="mailto:rectoria@upm.edu.mx" style="color: #2E2A77; text-decoration: none; font-weight: 500;">rectoria@upm.edu.mx</a></p>
+                <p style="margin: 0;"><strong>Admin. y Finanzas:</strong> <a href="mailto:administrativo@upm.edu.mx" style="color: #2E2A77; text-decoration: none; font-weight: 500;">administrativo@upm.edu.mx</a></p>
+            </div>
 
-<!-- INFORMACIÓN DE CONTACTO -->
-
-<section class="contenido-carrera">
-
-<h2>Información de Contacto</h2>
-
-<h3>Dirección</h3>
-
-<p>
-
-Carretera Tenosique – El Ceibo Km 43.5 S/N  
-Colonia Agrícola Sueños de Oro  
-Tenosique, Tabasco, México  
-C.P. 86906
-
-</p>
-
-
-<h3>Teléfonos</h3>
-
-<p>
-
-Teléfono Institucional: +52 934 342 46 71<br>
-Teléfono Difusión: +52 934 134 76 39
-
-</p>
-
-
-<h3>Correos Electrónicos</h3>
-
-<p>
-
-Difusión: <a href="mailto:difusion@upm.edu.mx">difusion@upm.edu.mx</a><br>
-
-Rectoría: <a href="mailto:rectoria@upm.edu.mx">rectoria@upm.edu.mx</a><br>
-
-Administración y Finanzas: <a href="mailto:administrativo@upm.edu.mx">administrativo@upm.edu.mx</a>
-
-</p>
-
-
-<h3>Horario de Atención</h3>
-
-<p>
-
-Lunes a Viernes: 07:00 – 13:00<br>
-Domingo: 09:00 – 15:00
-
-</p>
-
-</section>
-
-
-
-<!-- UBICACIÓN -->
-
-<section class="contenido-carrera">
-
-<h2>Ubicación</h2>
-
-<p>
-
-Puedes visitarnos en nuestras instalaciones o ubicar fácilmente el campus
-a través del siguiente mapa.
-
-</p>
-
-
-<div class="mapa-container">
-
-<iframe
-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3809.614329768276!2d-91.0966495!3d17.2858838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f487800ffe4531%3A0xbeec2e21aacd0827!2sUniversidad%20Polit%C3%A9cnica%20Mesoamericana!5e0!3m2!1ses!2smx!4v1767144883350!5m2!1ses!2smx"
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade"
-allowfullscreen>
-
-</iframe>
-
-</div>
-
-</section>
-
-
-
-<!-- PREGUNTAS FRECUENTES -->
-
-<section class="faq"> <h2>Preguntas Frecuentes</h2>
- <div class="faq-item">
-   <button class="faq-pregunta"> ¿Cuáles son los costos de inscripción? <span class="flecha">▼</span> </button>
-<div class="faq-respuesta"> <p>El costo de inscripción es de $1,211.00.</p> </div>
-</div> 
-
-<div class="faq-item">
-   <button class="faq-pregunta"> ¿Ofrecen becas? <span class="flecha">▼</span> </button> 
-<div class="faq-respuesta"> <p>Sí. Se ofrecen becas federales como Jóvenes Escribiendo el Futuro, así como apoyos de transporte y alimentación.</p> </div>
-</div>
-
-<div class="faq-item"> 
-  <button class="faq-pregunta"> ¿Qué horarios de clases manejan? <span class="flecha">▼</span> </button>
- <div class="faq-respuesta"> <p>Se manejan dos horarios: de 7:00 am a 3:00 pm y de 9:00 am a 5:00 pm.</p> </div>
-</div>
-
-<div class="faq-item">
-   <button class="faq-pregunta"> ¿Dónde se encuentra ubicada la universidad? <span class="flecha">▼</span> </button>
- <div class="faq-respuesta"> <p>En Carretera Tenosique – El Ceibo Km 43.5 S/N, Colonia Agrícola Sueños de Oro, Tenosique, Tabasco, México.</p> </div>
-</div>
-
- <div class="faq-item"> 
-  <button class="faq-pregunta"> ¿Puedo revalidar materias si vengo de otra institución? <span class="flecha">▼</span> </button>
- <div class="faq-respuesta"> <p>No, la universidad no cuenta con revalidación de materias.</p> </div>
- </div> 
- 
- <div class="faq-item">
-   <button class="faq-pregunta"> ¿Qué carreras ofrecen? <span class="flecha">▼</span> </button> 
-  <div class="faq-respuesta"> <p> Ingeniería en Tecnologías de la Información<br> 
-    Ingeniería en Manejo de Recursos Naturales<br>
-    Ingeniería Petrolera<br>
-    Licenciatura en Gestión y Desarrollo Turístico<br>
-    Licenciatura en Comercio Internacional y Aduanas </p> </div> 
-  </div>
-  
-  <div class="faq-item">
-     <button class="faq-pregunta"> ¿Qué documentos necesito para inscribirme? <span class="flecha">▼</span> </button>
-   <div class="faq-respuesta"> <p> • Certificado de bachillerato o constancia de terminación de estudios<br> 
-    • Acta de nacimiento<br> 
-    • 4 fotografías tamaño infantil blanco y negro<br> 
-    • Copia de INE<br>
-    • Copia de CURP<br> 
-    • Certificado médico<br> 
-    • Ficha de pago </p> </div>
-   </div>
-   
-   <div class="faq-item"> 
-   <button class="faq-pregunta"> ¿Con cuántas modalidades cuentan? <span class="flecha">▼</span> </button> 
-   <div class="faq-respuesta"> <p>Se cuenta con modalidad Escolarizada (lunes a viernes) y modalidad Mixta Virtual/Dual (solo domingos).</p> </div> 
-  </div> 
-  
-  <div class="faq-item">
-     <button class="faq-pregunta"> ¿La universidad ofrece prácticas profesionales y servicio social? <span class="flecha">▼</span> </button> 
-     <div class="faq-respuesta"> <p>Sí, ambos forman parte del plan de estudios y fortalecen la experiencia profesional del alumno.</p> </div> 
-    </div> 
-    
-    <div class="faq-item"> 
-      <button class="faq-pregunta"> ¿Cómo puedo obtener más información? <span class="flecha">▼</span> </button>
-     <div class="faq-respuesta"> <p>Puedes contactarnos por WhatsApp, redes sociales o visitando nuestras instalaciones.</p> </div>
-     </div>
-    
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #1E293B; font-size: 1.2rem; margin-bottom: 10px;">🕒 Horario de Atención</h3>
+                <p style="margin: 0;"><strong>Lunes a Viernes:</strong> 07:00 – 13:00</p>
+                <p style="margin: 0;"><strong>Domingo:</strong> 09:00 – 15:00</p>
+            </div>
+        </div>
     </section>
 
+    <section class="contenido-carrera" style="margin-bottom: 50px;">
+        
+        <h2 style="color: #2E2A77; margin-bottom: 15px; font-size: 2rem; text-align: center;">Nuestras Ubicaciones</h2>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem;">Puedes visitarnos en cualquiera de nuestras tres sedes oficiales para realizar tus trámites.</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px;">
+            
+            <div style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #E2E8F0; display: flex; flex-direction: column;">
+                <div style="padding: 25px; border-top: 5px solid #6FB341; flex-grow: 1;">
+                    <h3 style="color: #1E293B; font-size: 1.3rem; margin-bottom: 15px; min-height: 50px;">🎓 Universidad Politécnica Mesoamericana</h3>
+                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                        Carretera Tenosique – El Ceibo Km 43.5 S/N<br>
+                        Colonia Agrícola Sueños de Oro<br>
+                        Tenosique, Tabasco, México.<br>
+                        C.P. 86906
+                    </p>
+                </div>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4430.325967801565!2d-91.09774301131986!3d17.28580716480496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f487800ffe4531%3A0xbeec2e21aacd0827!2sUniversidad%20Polit%C3%A9cnica%20Mesoamericana!5e0!3m2!1ses-419!2sus!4v1774752691994!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #E2E8F0; display: flex; flex-direction: column;">
+                <div style="padding: 25px; border-top: 5px solid #F7941D; flex-grow: 1;">
+                    <h3 style="color: #1E293B; font-size: 1.3rem; margin-bottom: 15px; min-height: 50px;">🏢 Oficinas de Enlace</h3>
+                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                        Calle Guapaque Esq. Canshan,<br>
+                        Colonia Luis Gómez Z.,<br>
+                        Tenosique, Tabasco, México.
+                    </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d237.866033240631!2d-91.42241310826438!3d17.466579571972982!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1774752649040!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #E2E8F0; display: flex; flex-direction: column;">
+                <div style="padding: 25px; border-top: 5px solid #2E2A77; flex-grow: 1;">
+                    <h3 style="color: #1E293B; font-size: 1.3rem; margin-bottom: 15px; min-height: 50px;">📁 Unidad Administrativa</h3>
+                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                        Lázaro Cárdenas, Calle 55.<br>
+                        Colonia Luis Gómez Zepeda,<br>
+                        Tenosique de Pino Suárez, Tenosique,<br>
+                        Tabasco, México.
+                    </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d237.86163739173978!2d-91.425639799747!3d17.46994433261082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f39a7442d869ef%3A0x8ffcbecec0dcbdeb!2sC.%2055!5e0!3m2!1ses-419!2sus!4v1774752596502!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="faq" style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;"> 
+        <h2 style="color: #2E2A77; margin-bottom: 30px; font-size: 2rem; text-align: center;">Preguntas Frecuentes</h2>
+        
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿Cuáles son los costos de inscripción? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> 
+                <p>El costo de inscripción es de Escolarizado: $1,256.00, Sistema Abierto: $ 836.00 . Para más información, puedes consultar nuestro <a href="assets/img/precios_upm2026.jpg" style="color: #6FB341; font-weight: bold; text-decoration: underline;">archivo de costos</a>.</p> 
+            </div>
+        </div> 
+
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿Ofrecen becas? <span class="flecha">▼</span> </button> 
+            <div class="faq-respuesta"> <p>Sí, se ofrecen becas federales como Jóvenes Escribiendo el Futuro, así como apoyos de transporte y alimentación.</p> </div>
+        </div>
+
+        <div class="faq-item"> 
+            <button class="faq-pregunta"> ¿Qué horarios de clases manejan? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> <p>Se manejan dos horarios: de 7:00 am a 3:00 pm y de 9:00 am a 5:00 pm.</p> </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿Dónde se encuentra ubicada la universidad? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> 
+                <p>Contamos con 3 ubicaciones en Tenosique, Tabasco:</p>
+                <ul style="margin-left: 20px; margin-bottom: 10px;">
+                    <li><strong>Campus UPM:</strong> Carretera Tenosique – El Ceibo Km 43.5 S/N, Colonia Agrícola Sueños de Oro.</li>
+                    <li><strong>Oficinas de Enlace:</strong> Calle Guapaque Esq. Canshan, Colonia Luis Gómez Z.</li>
+                    <li><strong>Unidad Administrativa:</strong> Lázaro Cárdenas, Calle 55, Colonia Luis Gómez Zepeda.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item"> 
+            <button class="faq-pregunta"> ¿Puedo revalidar materias si vengo de otra institución? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> <p>No, la universidad no cuenta con revalidación de materias.</p> </div>
+        </div> 
+        
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿Qué carreras ofrecen? <span class="flecha">▼</span> </button> 
+            <div class="faq-respuesta"> 
+                <ul style="margin-left: 20px; margin-bottom: 15px;"> 
+                    <li>Ingeniería en Tecnologías de la Información</li> 
+                    <li>Ingeniería en Manejo de Recursos Naturales</li>
+                    <li>Ingeniería Petrolera</li>
+                    <li>Licenciatura en Gestión y Desarrollo Turístico</li>
+                    <li>Licenciatura en Comercio Internacional y Aduanas</li> 
+                </ul> 
+                <p><a href="carreras.html" style="color: #2E2A77; font-weight: bold; text-decoration: underline;">Conoce nuestra Oferta Educativa aquí.</a></p>
+            </div> 
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿Qué documentos necesito para inscribirme? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> 
+                <ul style="margin-left: 20px; margin-bottom: 10px; list-style-type: disc;"> 
+                    <li>Certificado de bachillerato o constancia de terminación de estudios</li> 
+                    <li>Acta de nacimiento</li> 
+                    <li>4 fotografías tamaño infantil blanco y negro</li> 
+                    <li>Copia de INE</li>
+                    <li>Copia de CURP</li> 
+                    <li>Certificado médico</li> 
+                    <li>Ficha de pago</li> 
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="faq-item"> 
+            <button class="faq-pregunta"> ¿Con cuántas modalidades cuentan? <span class="flecha">▼</span> </button> 
+            <div class="faq-respuesta"> <p>Se cuenta con modalidad Escolarizada (lunes a viernes) y modalidad Mixta Virtual/Dual (solo domingos).</p> </div> 
+        </div> 
+        
+        <div class="faq-item">
+            <button class="faq-pregunta"> ¿La universidad ofrece prácticas profesionales y servicio social? <span class="flecha">▼</span> </button> 
+            <div class="faq-respuesta"> <p>Sí, ambos forman parte del plan de estudios y fortalecen la experiencia profesional del alumno.</p> </div> 
+        </div> 
+        
+        <div class="faq-item"> 
+            <button class="faq-pregunta"> ¿Cómo puedo obtener más información? <span class="flecha">▼</span> </button>
+            <div class="faq-respuesta"> 
+                <p>Puedes contactarnos vía telefónica o WhatsApp a los siguientes números:</p>
+                <ul style="margin-left: 20px; list-style-type: none;">
+                    <li>📞 <strong>Institucional:</strong> +52 934 342 46 71</li>
+                    <li>📱 <strong>Difusión/WhatsApp:</strong> +52 934 134 76 39</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
 
 </main>
 
-
-
 <div id="footer-container"></div>
-
-<!-- BOTÓN WHATSAPP -->
-
-<a href="https://wa.me/529341347639?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
-class="whatsapp-float"
-target="_blank">
-
-<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
-
-</a>
-
 
 <script src="faq.js"></script>
 <script src="js/cargar-componentes.js"></script>

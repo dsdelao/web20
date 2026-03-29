@@ -11,160 +11,139 @@
 
 <div id="header-container"></div>
 
-<!-- ======================================
-BANNER INTERNO (TODAS LAS PÁGINAS)
-====================================== -->
+<section class="hero-interno" style="position: relative; min-height: 350px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 60px 20px; background-color: #2E2A77;">
 
-<section class="hero-interno">
-
-    <!-- Slider de imágenes -->
-    <div class="slider-fondo">
-
-        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
-
-        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
-
-        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
-
+    <div class="slider-fondo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <!-- Capa oscura -->
-    <div class="overlay-oscuro"></div>
+    <div class="overlay-oscuro" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.60); z-index: 2;"></div>
 
-    <!-- Texto del banner -->
-    <div class="hero-contenido">
-
-        <h1>Directorio Institucional</h1>
-
-        <p>
-          Consulta el directorio institucional de la Universidad Politécnica Mesoamericana y encuentra la 
-          información de contacto de las diferentes áreas académicas y administrativas para facilitar la 
-          comunicación con la comunidad universitaria.
-
-        </p>
+    <div class="hero-contenido" style="position: relative; z-index: 3; text-align: center; width: 100%; max-width: 900px;">
+        
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); color: #FFFFFF !important; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.9); font-weight: 900; text-transform: uppercase; line-height: 1.2;">
+            Directorio Institucional
+        </h1>
+        
+        <div style="color: #FFFFFF !important; font-size: clamp(1rem, 3vw, 1.2rem); text-shadow: 2px 2px 4px rgba(0,0,0,0.9); margin: 0 auto; max-width: 700px; line-height: 1.6;">
+          Consulta el directorio institucional de la Universidad Politécnica Mesoamericana y encuentra la información de contacto de las diferentes áreas académicas y administrativas para facilitar la comunicación con la comunidad universitaria.
+        </div>
 
     </div>
 
 </section>
 
-<main class="contenedor-about">
+<main class="contenedor-about" style="position: relative; z-index: 10; max-width: 1200px; margin: 60px auto; padding: 0 20px;">
 
-<section class="seccion directorio">
+    <section class="seccion directorio">
 
-<!-- RECTORÍA -->
-<h2>Rectoría</h2>
-<div class="grid-directorio">
+        <h2>Rectoría</h2>
+        <div class="grid-directorio">
 
-  <div class="card-persona">
-    <h3>M.C. José Cisneros Domínguez</h3>
-    <p><strong>Rector</strong></p>
-    <p><a href="mailto:rectoria@upm.edu.mx">rectoria@upm.edu.mx</a></p>
-    <span class="ext">Ext. 501</span>
-  </div>
+          <div class="card-persona">
+            <h3>M.C. José Cisneros Domínguez</h3>
+            <p><strong>Rector</strong></p>
+            <p><a href="mailto:rectoria@upm.edu.mx">rectoria@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1000</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Lic. José Guadalupe Valencia Frías</h3>
-    <p><strong>Abogado General</strong></p>
-    <p><a href="mailto:juridico@upm.edu.mx">juridico@upm.edu.mx</a></p>
-    <span class="ext">Ext. 506</span>
-  </div>
+          <div class="card-persona">
+            <h3>Lic. José Guadalupe Valencia Frías</h3>
+            <p><strong>Abogado General</strong></p>
+            <p><a href="mailto:juridico@upm.edu.mx">juridico@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1000</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Mtra. Buenaventura Santillán Gaspar</h3>
-    <p><strong>Planeación, Programación y Evaluación</strong></p>
-    <p><a href="mailto:planeacion@upm.edu.mx">planeacion@upm.edu.mx</a></p>
-    <span class="ext">Ext. 505</span>
-  </div>
+          <div class="card-persona">
+            <h3>Lic. Antonio Valenzuela Pozo</h3>
+            <p><strong>Planeación, Programación y Evaluación</strong></p>
+            <p><a href="mailto:planeacion@upm.edu.mx">planeacion@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1004</span>
+          </div>
 
-</div>
+        </div>
 
-<!-- SECRETARÍA ACADÉMICA -->
-<h2>Secretaría Académica</h2>
-<div class="grid-directorio">
+        <h2>Secretaría Académica</h2>
+        <div class="grid-directorio">
 
-  <div class="card-persona">
-    <h3>Mtra. Patricia del C. Aguilar García</h3>
-    <p><strong>Secretaria Académica</strong></p>
-    <p><a href="mailto:academico@upm.edu.mx">academico@upm.edu.mx</a></p>
-    <span class="ext">Ext. 501</span>
-  </div>
+          <div class="card-persona">
+            <h3>Mtra. Patricia del C. Aguilar García</h3>
+            <p><strong>Secretaria Académica</strong></p>
+            <p><a href="mailto:academico@upm.edu.mx">academico@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1005</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Ing. Rubiel Urrutia Hidalgo</h3>
-    <p><strong>Servicios Escolares</strong></p>
-    <p><a href="mailto:servicios.escolares@upm.edu.mx">servicios.escolares@upm.edu.mx</a></p>
-    <span class="ext">Ext. 508</span>
-  </div>
+          <div class="card-persona">
+            <h3>Ing. Rubiel Urrutia Hidalgo</h3>
+            <p><strong>Servicios Escolares</strong></p>
+            <p><a href="mailto:servicios.escolares@upm.edu.mx">servicios.escolares@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1012</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Mtro. Roberto Rodríguez Vázquez</h3>
-    <p><strong>Departamento Académico</strong></p>
-    <p><a href="mailto:departamentoacademico@upm.edu.mx">departamentoacademico@upm.edu.mx</a></p>
-    <span class="ext">Ext. 507</span>
-  </div>
+          <div class="card-persona">
+            <h3>Mtro. Roberto Rodríguez Vázquez</h3>
+            <p><strong>Departamento Académico</strong></p>
+            <p><a href="mailto:departamentoacademico@upm.edu.mx">departamentoacademico@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1006</span>
+          </div>
 
-</div>
+        </div>
 
-<!-- ADMINISTRACIÓN -->
-<h2>Secretaría de Administración y Finanzas</h2>
-<div class="grid-directorio">
+        <h2>Secretaría de Administración y Finanzas</h2>
+        <div class="grid-directorio">
 
-  <div class="card-persona">
-    <h3>Mtra. Blanca Estela Díaz Marín</h3>
-    <p><strong>Secretaria de Administración y Finanzas</strong></p>
-    <p><a href="mailto:administrativo@upm.edu.mx">administrativo@upm.edu.mx</a></p>
-    <span class="ext">Ext. 1003</span>
-  </div>
+          <div class="card-persona">
+            <h3>Mtra. Blanca Estela Díaz Marín</h3>
+            <p><strong>Secretaria de Administración y Finanzas</strong></p>
+            <p><a href="mailto:administrativo@upm.edu.mx">administrativo@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1003</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Lic. José Manuel Mendoza Zetina</h3>
-    <p><strong>Contabilidad y Control Presupuestal</strong></p>
-    <p><a href="mailto:contabilidad@upm.edu.mx">contabilidad@upm.edu.mx</a></p>
-  </div>
+          <div class="card-persona">
+            <h3>Lic. José Manuel Mendoza Zetina</h3>
+            <p><strong>Contabilidad y Control Presupuestal</strong></p>
+            <p><a href="mailto:contabilidad@upm.edu.mx">contabilidad@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1000</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Lic. Mauricio Valenzuela Aguilar</h3>
-    <p><strong>Recursos Materiales y Servicios Generales</strong></p>
-    <p><a href="mailto:recursos.materiales@upm.edu.mx">recursos.materiales@upm.edu.mx</a></p>
-    <span class="ext">Ext. 1004</span>
-  </div>
+          <div class="card-persona">
+            <h3>Lic. Mauricio Valenzuela Aguilar</h3>
+            <p><strong>Recursos Materiales y Servicios Generales</strong></p>
+            <p><a href="mailto:recursos.materiales@upm.edu.mx">recursos.materiales@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1004</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Dr. Sergio Alejandro Torres Hernández</h3>
-    <p><strong>Recursos Humanos</strong></p>
-    <p><a href="mailto:recursos.humanos@upm.edu.mx">recursos.humanos@upm.edu.mx</a></p>
-    <span class="ext">Ext. 1004</span>
-  </div>
+          <div class="card-persona">
+            <h3>Dr. Sergio Alejandro Torres Hernández</h3>
+            <p><strong>Recursos Humanos</strong></p>
+            <p><a href="mailto:recursos.humanos@upm.edu.mx">recursos.humanos@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1004</span>
+          </div>
 
-  <div class="card-persona">
-    <h3>Dr. David Salomón de la O Hidalgo</h3>
-    <p><strong>Informática Institucional</strong></p>
-    <p><a href="mailto:informatica@upm.edu.mx">informatica@upm.edu.mx</a></p>
-    <span class="ext">Ext. 1011</span>
-  </div>
+          <div class="card-persona">
+            <h3>Dr. David Salomón de la O Hidalgo</h3>
+            <p><strong>Informática Institucional</strong></p>
+            <p><a href="mailto:informatica@upm.edu.mx">informatica@upm.edu.mx</a></p>
+            <span class="ext">Ext. 1011</span>
+          </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 </main>
 
 <div id="footer-container"></div>
 
-
-<!-- =========================
-        BOTÓN WHATSAPP
-========================= -->
 <a href="https://wa.me/529341347639?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
 class="whatsapp-float"
 target="_blank">
-
-<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
-
+  <img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
 </a>
-
-
 
 <script src="faq.js"></script>
 <script src="js/cargar-componentes.js"></script>
+
 </body>
 </html>

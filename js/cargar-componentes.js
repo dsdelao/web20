@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Cargar FOOTER
-  fetch("footer.html")
+  fetch("footer.html?v=2")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer-container").innerHTML = data;
