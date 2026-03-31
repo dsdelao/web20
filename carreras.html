@@ -18,6 +18,113 @@
 <link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" href="assets/icon/favicon.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+
+<!-- ======================================
+Analítica
+====================================== -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K0WS06SPXY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0WS06SPXY');
+</script>
+
+
+<script>
+// Función para rastrear clics
+function trackEvent(eventName, eventParams) {
+  gtag('event', eventName, eventParams);
+}
+
+// Rastrear clics en botones importantes
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // Clic en "Explorar Carreras"
+  var btnCarreras = document.querySelectorAll('[href*="carreras"], .btn-naranja-hero');
+  btnCarreras.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      trackEvent('click_explorar_carreras', {
+        'button_location': 'hero_principal'
+      });
+    });
+  });
+
+  // Clic en "Iniciar Admisión"
+  var btnAdmision = document.querySelectorAll('[href*="admision"], .btn-outline-hero');
+  btnAdmision.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      trackEvent('click_iniciar_admision', {
+        'button_location': 'hero_principal'
+      });
+    });
+  });
+
+  // Clic en WhatsApp
+  var btnWhatsapp = document.querySelector('.whatsapp-float');
+  if(btnWhatsapp) {
+    btnWhatsapp.addEventListener('click', function() {
+      trackEvent('click_whatsapp', {
+        'contact_method': 'floating_button'
+      });
+    });
+  }
+
+  // Clic en carreras específicas
+  var cardsCarreras = document.querySelectorAll('.card-programa, .card-carrera');
+  cardsCarreras.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var carrera = this.querySelector('h3') ? this.querySelector('h3').textContent : 'Sin nombre';
+      trackEvent('click_carrera', {
+        'carrera_nombre': carrera
+      });
+    });
+  });
+
+  // Descarga de PDFs (Mapas curriculares)
+  var pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+  pdfLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      var pdfName = this.getAttribute('href').split('/').pop();
+      trackEvent('download_pdf', {
+        'file_name': pdfName
+      });
+    });
+  });
+
+  // Envío de formulario de admisión
+  var formAdmision = document.querySelector('.form-registro');
+  if(formAdmision) {
+    formAdmision.addEventListener('submit', function() {
+      trackEvent('form_submit_admision', {
+        'form_type': 'pre_registro'
+      });
+    });
+  }
+
+});
+</script>
+
+<!-- MICROSOFT CLARITY -->
+
+<meta name="google-site-verification" content="ZoJwVVGgHTIAdCpC3ba5JGMCD8IVshNq3QWk0lz9ysE" />
+
+<!-- Google Search Console-->
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w3cwbtqqkk");
+</script>
+
+
 </head>
 
 <body>
@@ -122,6 +229,6 @@
 
 <script src="faq.js"></script>
 <script src="js/cargar-componentes.js"></script>
-
+<script src="js/analytics.js"></script>
 </body>
 </html>

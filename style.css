@@ -56,24 +56,32 @@ img {
 }
 
 /* ================================ 
-   HEADER / MENÚ (VERSIÓN LIMPIA)
+   HEADER / MENÚ (VERSIÓN BLANCA Y LUMINOSA)
+================================ */
+/* ================================ 
+   HEADER / MENÚ (EFECTO CRISTAL / BLUR)
 ================================ */
 .menu {
-  background: var(--morado-upm);
+  /* Magia del Glassmorphism */
+  background: rgba(255, 255, 255, 0.85); /* Blanco al 85% de opacidad */
+  backdrop-filter: blur(12px); /* El difuminado */
+  -webkit-backdrop-filter: blur(12px); /* Soporte vital para iPhones y Safari */
+  
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  position: fixed;
+  /* Menú Sticky/Fijo */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* 🔥 ESTO FALTABA */
+  width: 100%; 
   
-  z-index: 9999; /* súbelo un poco */
+  z-index: 9999; 
   
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Sombra aún más suave para que luzca el cristal */
 }
 
 /* Logo */
@@ -83,15 +91,14 @@ img {
 }
 
 .logo-upm {
-  height: 75px; /* Hacemos el logo más grande para que destaque */
+  height: 75px; 
   transition: transform 0.3s ease;
 }
 
 .logo-upm:hover {
-  transform: scale(1.05); /* Pequeño efecto al pasar el mouse */
+  transform: scale(1.05); 
 }
 
-/* Ocultamos el nombre larguísimo de la universidad */
 .titulo-upm {
   display: none; 
 }
@@ -110,6 +117,7 @@ nav {
   gap: 20px;
   margin: 0;
   padding: 0;
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
 .menu-principal li {
@@ -117,9 +125,9 @@ nav {
 }
 
 .menu-principal a {
-  color: var(--blanco);
+  color: var(--morado-upm); /* Letras azul marino/moradas */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.05rem;
   white-space: nowrap;
   transition: 0.3s;
@@ -127,14 +135,15 @@ nav {
   padding-bottom: 5px;
 }
 
+/* Efecto hover general */
+.menu-principal a:hover,
 .menu-principal a.activo {
   color: var(--naranja-upm);
+  transform: translateY(-2px);
+  text-shadow: none; /* Quitamos la sombra, en fondo blanco no se usa */
 }
 
-.menu-principal a.activo::after {
-  width: 100%;
-}
-
+/* Línea naranja debajo de los links */
 .menu-principal a::after {
   content: "";
   position: absolute;
@@ -146,16 +155,50 @@ nav {
   transition: width 0.3s ease;
 }
 
-.menu-principal a:hover::after {
+.menu-principal a:hover::after,
+.menu-principal a.activo::after {
   width: 100%;
 }
 
-.menu-principal a:hover {
-  color: var(--naranja-upm);
-  transform: translateY(-3px);
-  text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* 🌟 BOTÓN DESTACADO (Admisiones) 🌟 */
+/* ================================
+   🌟 ENLACE DESTACADO (Admisiones) 🌟 (Actualizado: Sin Recuadro)
+================================ */
+.destacado-menu {
+  /* Hacemos que sea un enlace de texto normal, pero naranja */
+  color: var(--naranja-upm) !important;
+  background-color: transparent !important; /* Sin fondo naranja */
+  padding: 0 0 5px 0 !important; /* Padding normal (solo abajo para la línea) */
+  border-radius: 0 !important; /* Sin bordes redondeados */
+  box-shadow: none !important; /* Sin sombra */
+  position: relative;
 }
 
+/* Reinstalamos la línea naranja inferior al pasar el mouse para Admisiones */
+.destacado-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--naranja-upm);
+  transition: width 0.3s ease;
+  display: block !important; /* Asegurar que se muestre */
+}
+
+/* Efectos al pasar el mouse */
+.destacado-menu:hover,
+.destacado-menu.activo {
+  color: var(--naranja-upm) !important; /* Mantenemos el naranja */
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.destacado-menu:hover::after,
+.destacado-menu.activo::after {
+  width: 100%; /* La línea naranja se expande */
+}
 /* ================================
    SUBMENÚ (DROPDOWN)
 ================================ */
@@ -164,27 +207,36 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #3b3791;
-  min-width: 220px;
+  background: #ffffff; /* Dropdown blanco */
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  border-radius: 6px;
+  border-radius: 8px;
   z-index: 1000;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(15px) scale(0.95);
   transition: opacity 0.25s ease, transform 0.25s ease;
   pointer-events: none;
+  border: 1px solid #E2E8F0; /* Borde muy sutil */
 }
 
 .dropdown li a {
-  padding: 10px 20px;
+  padding: 12px 20px;
   display: block;
+  color: #475569 !important; /* Gris oscuro elegante */
+  font-weight: 500;
+}
+
+.dropdown li a::after {
+  display: none; /* Sin línea en submenú */
 }
 
 .dropdown li a:hover {
-  background: rgba(255,255,255,0.1);
+  background: #F8FAFC; 
+  color: var(--naranja-upm) !important;
+  padding-left: 25px; /* Efecto interactivo de moverse a la derecha */
 }
 
 .submenu:hover .dropdown {
@@ -194,7 +246,7 @@ nav {
   pointer-events: auto;
 }
 
-@media (max-width:768px){
+@media (max-width:900px){
   .submenu:hover .dropdown{ display:none; }
 }
 
@@ -206,66 +258,126 @@ nav {
 .menu-icon {
   display: none;
   font-size: 2.2rem;
-  color: var(--blanco);
+  color: var(--morado-upm); /* Icono hamburguesa oscuro */
   cursor: pointer;
   transition: 0.3s;
 }
 
 .menu-icon:hover{ transform: scale(1.1); }
 
-@media (max-width:768px){
+/* Aumenté un poco el breakpoint móvil a 900px para evitar que el menú choque en tablets */
+/* ================================
+   MENÚ HAMBURGUESA (MÓVIL - CORREGIDO Y BLINDADO)
+================================ */
+#menu-toggle { display: none; }
 
-  .menu-icon{ 
-    display:block; 
-    font-size:30px; 
-    cursor:pointer;
-    color:white; 
-    }
-  
-
-    .nav-menu{
- position:fixed;
- top:0;
- right:-100%;
- width:85%;
- max-width:320px;
- height:100vh;
-
- background:#3b3685;
-
- transition:0.35s ease;
- padding-top:80px;
-
- overflow-y:auto;      /* PERMITE SCROLL */
- overflow-x:hidden;
-
- z-index:1000;
- box-shadow:-10px 0 25px rgba(0,0,0,0.3);
+.menu-icon {
+  display: none;
+  font-size: 2.2rem;
+  color: var(--morado-upm); /* Icono hamburguesa oscuro */
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-  #menu-toggle:checked + .menu-icon + .nav-menu{ right:0; }
-  .cerrar-menu{ position:absolute; top:25px; right:25px; font-size:28px; color:white; cursor:pointer; }
-  .menu-principal{ flex-direction:column; gap:0; }
-  .menu-principal li{ border-bottom:1px solid rgba(255,255,255,0.15); }
-  .menu-principal a{ display:block; padding:18px 25px; font-size:17px; text-align:left; }
+.menu-icon:hover{ transform: scale(1.1); }
 
+@media (max-width:900px){
+  
+  /* --- Ajustes Generales del Header en Celular --- */
+  .menu {
+    padding: 10px 15px; /* Reducimos el padding para que no se amontone en los bordes */
+  }
+
+  .logo-upm {
+    height: 60px; /* Reducimos el tamaño del logo para que quepa mejor verticalmente */
+  }
+
+  /* --- Empujar el contenido hacia abajo para que no se tape --- */
+  /* Aplicamos un margen superior al primer elemento importante después del header (el banner hero) */
+  .hero, .hero-interno, main {
+    margin-top: 90px !important; /* Altura estimada del header móvil. ¡Crucial para que no se tape el texto! */
+  }
+
+  /* --- Diseño del Menú Lateral --- */
+  .menu-icon{ 
+    display:block; 
+    font-size:32px; 
+    margin-right: 5px; /* Pequeño espacio con el borde */
+  }
+
+  .nav-menu{
+    position:fixed;
+    top: 0; /* Lo fijamos arriba */
+    right:-100%;
+    width:85%;
+    max-width:320px;
+    height:100vh;
+    
+    /* Efecto Cristal en el menú lateral */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    transition:0.35s ease;
+    padding-top:80px; /* Espacio para la tacha de cerrar */
+    overflow-y:auto; 
+    overflow-x:hidden;
+    z-index:1000;
+    box-shadow:-10px 0 25px rgba(0,0,0,0.15);
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-menu{ right:0; }
+  
+  .cerrar-menu{ 
+    position:absolute; 
+    top:15px; /* Un poco más arriba */
+    right:20px; 
+    font-size:30px; 
+    color: var(--morado-upm); /* Tacha de cerrar oscura */
+    cursor:pointer; 
+  }
+  
+  .menu-principal{ 
+    flex-direction:column; 
+    gap:0; 
+    align-items: stretch; 
+  }
+  
+  .menu-principal li{ 
+    border-bottom:1px solid #E2E8F0; 
+  }
+  
+  .menu-principal a{ 
+    display:block; 
+    padding:18px 25px; 
+    font-size:17px; 
+    text-align:left; 
+    color: var(--morado-upm); /* Letras oscuras en móvil */
+  }
+
+/* Ajuste para el enlace de Admisiones en celular (dentro del media query) */
+  .destacado-menu {
+    margin: 0 !important; /* Quitamos el margen especial */
+    text-align: left !important; /* Alineación estándar a la izquierda */
+    color: var(--naranja-upm) !important; /* Sigue siendo naranja */
+    padding: 18px 25px !important; /* Padding estándar de menú móvil */
+  }
+
+  /* Dropdown en móvil */
   .dropdown{ 
     position:static; 
     display:none; 
-    background:rgba(255,255,255,0.15); 
-    backdrop-filter: blur(8px); 
-    margin: 5px 0;
-    border-radius: 6px;
-
+    background:#F8FAFC; 
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    border-radius: 0;
   }
 
   .submenu.active .dropdown{ display:block; }
-  .dropdown li a{ padding-left:40px; font-size:15px; }
+  .dropdown li a{ padding-left:40px; font-size:15px; border-bottom: 1px solid #E2E8F0; }
+  .dropdown li:last-child a { border-bottom: none; }
 }
-
-
-
-
 /* =================================
    CAPA OSCURA DEL BANNER
 ================================= */
